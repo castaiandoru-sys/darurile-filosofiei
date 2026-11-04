@@ -1,0 +1,34 @@
+backend:
+  name: github
+  repo: INLOCUIESTE_UTILIZATOR/INLOCUIESTE_REPO
+  branch: main
+  # Configurarea autentificării OAuth este necesară înainte de utilizare.
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+locale: ro
+collections:
+  - name: "posts"
+    label: "Articole"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - {label: "Titlu", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+      - {label: "Descriere scurtă", name: "description", widget: "text"}
+      - {label: "Text", name: "body", widget: "markdown"}
+  - name: "materials"
+    label: "Materiale"
+    folder: "content/materiale"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - {label: "Titlu", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+      - {label: "Descriere", name: "description", widget: "text"}
+      - {label: "Fișier", name: "file", widget: "file", required: false}
+      - {label: "Detalii", name: "body", widget: "markdown", required: false}
