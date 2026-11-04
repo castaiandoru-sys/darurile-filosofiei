@@ -2,6 +2,7 @@ backend:
   name: github
  repo: castaiandoru-sys/darurile-filosofiei
   branch: main
+    base_url: https://darurile-filosofiei-auth.castaiandoru.workers.dev
   # Configurarea autentificării OAuth este necesară înainte de utilizare.
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
