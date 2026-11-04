@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: INLOCUIESTE_UTILIZATOR/INLOCUIESTE_REPO
+ repo: castaiandoru-sys/darurile-filosofiei
   branch: main
   # Configurarea autentificării OAuth este necesară înainte de utilizare.
 media_folder: "assets/uploads"
